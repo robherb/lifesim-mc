@@ -3,13 +3,11 @@ import Toybox.Graphics;
 
 class DrawableMenuTitle extends WatchUi.Drawable {
 
-    //! Constructor
     public function initialize() {
         Drawable.initialize({});
     }
 
     //! Draw the application icon and main menu title
-    //! @param dc Device Context
     public function draw(dc as Dc) as Void {
         var spacing = 2;
         var appIcon = WatchUi.loadResource($.Rez.Drawables.LauncherIcon) as BitmapResource;

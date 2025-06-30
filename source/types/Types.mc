@@ -10,22 +10,6 @@ enum InitStage {
     DONE
 }
 
-// typedef Thing interface {
-//     var x as Number;
-//     var y as Number;
-//     var mass as Number;
-//     const color as Number = Graphics.COLOR_DK_GRAY;
-
-//     // function initialize(x as Number, y as Number) {
-//     //     self.x = x;
-//     //     self.y = y;
-//     // }
-
-//     // function toString() as String {
-//     //     return "Nothing(" + x + ", " + y + ")";
-//     // }
-// }
-
 // TODO rename to Empty
 class Thing {
 
@@ -98,7 +82,6 @@ class Frob extends Thing {
     (:initialized)
     var birthPercent as Number;
 
-    // const color as Number = Graphics.COLOR_DK_BLUE;
     const color as Number = Graphics.COLOR_BLUE;
     
     function initialize(x as Number, y as Number, mass as Number) {

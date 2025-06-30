@@ -1,0 +1,3 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="frob.png" scaleX="100%" scaleRelativeTo="screen" packingFormat="png"/>
+</drawables>

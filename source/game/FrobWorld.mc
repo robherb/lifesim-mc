@@ -193,7 +193,7 @@ class FrobWorld {
         gameOver = false;
         q = new PQueue(0);
         grid = new Array<Array<Thing>>[0];
-        // seed = 0;
+        // seed = 0; // see preInit() for seed reset logic
         emptySlots = {};
     }
 

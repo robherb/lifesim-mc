@@ -1,15 +1,8 @@
-//
-// Copyright 2015-2021 by Garmin Ltd. or its subsidiaries.
-// Subject to Garmin SDK License Agreement and Wearables
-// Application Developer Agreement.
-//
-
 import Toybox.Application.Storage;
 import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
-//! Picker that allows the user to choose a date
 class NumberPicker extends WatchUi.Picker {
 
     // TODO need a way to "hook" into which digit is being picked, does not appear possible using std lib WatchUi.Picker as-is :(
@@ -20,7 +13,6 @@ class NumberPicker extends WatchUi.Picker {
     }
     const updateNumberPreviewMethod = method(:updateNumberPreview);
 
-    //! Constructor
     public function initialize() {
         var state = Storage.getValue(seedStoreKey) as Number;
         var digits = numberToDigitArray(state) as Array<Number>;
@@ -45,8 +37,6 @@ class NumberPicker extends WatchUi.Picker {
             });
     }
 
-    //! Update the view
-    //! @param dc Device Context
     public function onUpdate(dc as Dc) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
@@ -54,24 +44,17 @@ class NumberPicker extends WatchUi.Picker {
     }
 }
 
-//! Responds to a date picker selection or cancellation
 class NumberPickerDelegate extends WatchUi.PickerDelegate {
 
-    //! Constructor
     public function initialize() {
         PickerDelegate.initialize();
     }
 
-    //! Handle a cancel event from the picker
-    //! @return true if handled, false otherwise
     public function onCancel() as Boolean {
         WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
         return true;
     }
 
-    //! Handle a confirm event from the picker
-    //! @param values The values chosen in the picker
-    //! @return true if handled, false otherwise
     public function onAccept(values as Array) as Boolean {
         // convert array of picked digits to a single number serving as the seed
         if (values[0] != null) {

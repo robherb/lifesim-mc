@@ -50,7 +50,6 @@ class FrobWorldDelegate extends WatchUi.BehaviorDelegate {
         );
         delegate = new FrobWorldMenuDelegate(menuSettings);
         WatchUi.pushView(menu, delegate, WatchUi.SLIDE_UP);
-        // WatchUi.showToast("test", {:icon=>Rez.Drawables.LauncherIcon});
         return true;
     }
 
