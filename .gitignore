@@ -1,0 +1,10 @@
+.vscode/
+FrobWorld.prg
+FrobWorld.prg.debug.xml
+bin/
+gen/
+internal-mir/
+manifest.xml
+mir/
+monkey.jungle
+

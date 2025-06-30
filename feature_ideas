@@ -1,0 +1,14 @@
+Frob World Feature Ideas
+
+[x] Always show ticks even after game over
+[x] Way to see current seed
+[x] Replay a seed
+[x] Restart current seed
+[x] Grass count
+[ ] View frob stats in menu
+    [ ] group stats
+    [ ] individual frob stats/props/genotype
+[ ] Draw rounded grid to use more screen space on round displays
+[-] Bitmap graphics
+    - 2.0...
+[ ] Adjustable sim parameters
